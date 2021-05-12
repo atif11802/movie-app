@@ -13,7 +13,7 @@ const Movie = () => {
 			const res = await axios.get(
 				`https://api.themoviedb.org/3/movie/top_rated?api_key=a32bc9b159b59bd0fee1df4309538040&language=en-US&page=${page}`
 			);
-			console.log(res.data.results[0].poster_path);
+			
 			setMovie(res.data.results);
             setImage(res.data.results);
 		}
